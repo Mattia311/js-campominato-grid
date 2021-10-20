@@ -15,71 +15,49 @@ if(askDifficulty == 1) {
 
     for (let i = 1; i <= 100; i++) {
         console.log(i);
-        const number = `${i}`;
+
+
+        const elemento = `<div class= "grid_cell"> ${i} </div>`;
+        containerEle.innerHTML += elemento;
         
-        const elemento = document.createElement('div');
-        elemento.className = 'grid_cell'
-        containerEle.append(elemento);
-        
-        
-        /*containerEle.innerHTML += number*/
-        /*number.classList.add("box")*/
-        /*number.className = 'numeriApp'*/
-       
-        
-        
-        
-        
-        elemento.addEventListener('click', function() {
+         /*elemento.addEventListener('click', function() {
             this.style.background = 'blue'
-        })
+        })*/
     }
 } else if(askDifficulty == 2) {
 
     for (let i = 1; i <= 81; i++) {
         console.log(i);
-        const number = `${i}`;
         
-        const elemento = document.createElement('div');
-        elemento.className = 'grid_cell'
-        containerEle.append(elemento);
-        
-        
-        /*containerEle.innerHTML += number*/
-        /*number.classList.add("box")*/
-        /*number.className = 'numeriApp'*/
-       
-        
-        
-        
-        
-        elemento.addEventListener('click', function() {
-            this.style.background = 'blue'
-        })
+
+        const elemento = `<div class= "grid_cell"> ${i} </div>`;
+        containerEle.innerHTML += elemento;
     }
 }else if (askDifficulty == 3) {
 
     for (let i = 1; i <= 49; i++) {
         console.log(i);
-        const number = `${i}`;
         
-        const elemento = document.createElement('div');
-        elemento.className = 'grid_cell'
-        containerEle.append(elemento);
-        
-        
-        /*containerEle.innerHTML += number*/
-        /*number.classList.add("box")*/
-        /*number.className = 'numeriApp'*/
-       
-        
-        
-        
-        
-        elemento.addEventListener('click', function() {
-            this.style.background = 'blue'
-        })
+        const elemento = `<div class= "grid_cell"> ${i} </div>`;
+        containerEle.innerHTML += elemento;
     }
+}
+
+const premere = document.querySelectorAll('.grid_cell');
+console.log(premere);
+
+
+ const elemento = `<div class= "grid_cell">  </div>`;
+ 
+ elemento.addEventListener('click', function() {
+    this.style.background = 'blue'
+ })
+
+
+for (let i = 1; i < 100; i++) {
+
+        
+    
 }
 
 
