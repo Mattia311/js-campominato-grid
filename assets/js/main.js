@@ -11,25 +11,80 @@ console.log(askDifficulty);
 const containerEle = document.querySelector('.container')
 
 
-for (let i = 1; i <= 64; i++) {
-    console.log(i);
-    const number =  `${i}`;
-    
-    const elemento = document.createElement('div');
-    elemento.className = 'grid_cell'
-    containerEle.append(elemento);
-    
-    
-    containerEle.innerHTML += number
-    /*number.className = 'numeriApp'*/
-    
-    
-    
-    
-    elemento.addEventListener('click', function() {
-        this.style.background = 'blue'
-    })
+if(askDifficulty == 1) {
+
+    for (let i = 1; i <= 100; i++) {
+        console.log(i);
+        const number = `${i}`;
+        
+        const elemento = document.createElement('div');
+        elemento.className = 'grid_cell'
+        containerEle.append(elemento);
+        
+        
+        /*containerEle.innerHTML += number*/
+        /*number.classList.add("box")*/
+        /*number.className = 'numeriApp'*/
+       
+        
+        
+        
+        
+        elemento.addEventListener('click', function() {
+            this.style.background = 'blue'
+        })
+    }
+} else if(askDifficulty == 2) {
+
+    for (let i = 1; i <= 81; i++) {
+        console.log(i);
+        const number = `${i}`;
+        
+        const elemento = document.createElement('div');
+        elemento.className = 'grid_cell'
+        containerEle.append(elemento);
+        
+        
+        /*containerEle.innerHTML += number*/
+        /*number.classList.add("box")*/
+        /*number.className = 'numeriApp'*/
+       
+        
+        
+        
+        
+        elemento.addEventListener('click', function() {
+            this.style.background = 'blue'
+        })
+    }
+}else if (askDifficulty == 3) {
+
+    for (let i = 1; i <= 49; i++) {
+        console.log(i);
+        const number = `${i}`;
+        
+        const elemento = document.createElement('div');
+        elemento.className = 'grid_cell'
+        containerEle.append(elemento);
+        
+        
+        /*containerEle.innerHTML += number*/
+        /*number.classList.add("box")*/
+        /*number.className = 'numeriApp'*/
+       
+        
+        
+        
+        
+        elemento.addEventListener('click', function() {
+            this.style.background = 'blue'
+        })
+    }
 }
+
+
+
+
 
 
 
