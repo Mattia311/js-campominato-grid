@@ -8,6 +8,8 @@ const askDifficulty = parseInt(prompt('Benvenuto nel gioco Campo Minato. Ora dov
 
 console.log(askDifficulty);
 
+const testo = document.getElementById('testo')
+
 const containerEle = document.querySelector('.container')
 
 
@@ -15,50 +17,62 @@ if(askDifficulty == 1) {
 
     for (let i = 1; i <= 100; i++) {
         console.log(i);
-
-
-        const elemento = `<div class= "grid_cell"> ${i} </div>`;
-        containerEle.innerHTML += elemento;
         
-         /*elemento.addEventListener('click', function() {
+
+        const elemento = document.createElement('div');
+        elemento.className = 'grid_cell'
+        containerEle.append(elemento);
+
+        elemento.innerHTML = i;
+
+        testo.innerHTML = ('Questo è il livello facile');
+        
+        elemento.addEventListener('click', function() {
             this.style.background = 'blue'
-        })*/
+        })
     }
 } else if(askDifficulty == 2) {
 
     for (let i = 1; i <= 81; i++) {
         console.log(i);
-        
+        const number = `${i}`;
 
-        const elemento = `<div class= "grid_cell"> ${i} </div>`;
-        containerEle.innerHTML += elemento;
+        const elemento = document.createElement('div');
+        elemento.className = 'grid_cell'
+        containerEle.append(elemento);
+
+        testo.innerHTML = ('Questo è il livello intermedio')
+
+
+        elemento.innerHTML = i;
+        
+        elemento.addEventListener('click', function() {
+            this.style.background = 'blue'
+        })
     }
 }else if (askDifficulty == 3) {
 
     for (let i = 1; i <= 49; i++) {
         console.log(i);
+        const number = `${i}`;
+
+        const elemento = document.createElement('div');
+        elemento.className = 'grid_cell'
+        containerEle.append(elemento);
+
+        testo.innerHTML = ('Questo è il livello difficile')
+
+        elemento.innerHTML = i;
         
-        const elemento = `<div class= "grid_cell"> ${i} </div>`;
-        containerEle.innerHTML += elemento;
+        elemento.addEventListener('click', function() {
+            this.style.background = 'blue'
+        })
     }
 }
 
-const premere = document.querySelectorAll('.grid_cell');
-console.log(premere);
-
-
- const elemento = `<div class= "grid_cell">  </div>`;
- 
- elemento.addEventListener('click', function() {
-    this.style.background = 'blue'
- })
-
-
-for (let i = 1; i < 100; i++) {
 
         
     
-}
 
 
 
